@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color:white;
+		}
+		#panel, #flip {
+				padding: 5px;
+				font-size: 18px;
+				text-align: center;
+				background-color: #555;
+				color: white;
+				border: solid 1px #666;
+				border-radius: 3px;
+			}
+			#panel {
+				padding: 50px;
+				display: none;
+			}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#flip").click(function(){
+$("#panel").slideDown(5000);
+});
+});
+</script>
+</head>
+<body>
+<table align="right" border="1" bgcolor="red">
+	<tr>
+		<td><a href="orderfood.html"><b>Order Food</b></a></td>
+		<td><a href="orderstatus.html"><b>Check Order Status</b></a></td>
+		<td><a href="editprofile.html" target="_self"><b>Edit Profile</b></a></td>
+	</tr>
+</table>
+<div id="flip">Click to see update on your Food Ordered.</div>
+<div id="panel">THE FOOD ORDERED WILL BE SERVED IN 30MINS.</div>
+</body>
+</html>

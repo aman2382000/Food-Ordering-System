@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color: red;
+		}
+		h1.hd1
+		{
+			color:white;
+			text-align:center;
+			background-color:blue;
+		}
+		#demo
+		{
+			text-align:right;
+			color:white;
+		}
+	</style>
+<script type="text/javascript">
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer(){
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("demo").innerHTML=t;
+}
+</script>
+</head>
+<body>
+	<h1 class="hd1">Online Food Order</h1>
+	<h3 align="right"><a href="login.html" target="_parent">LOGOUT</a></h3>
+	<p id="demo"></p>
+	
+</body>
+</html>
